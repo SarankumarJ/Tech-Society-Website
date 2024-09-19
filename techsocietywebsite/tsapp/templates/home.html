@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Home | Tech Society{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Welcome to the Tech Society</h1>
+    <div class="row">
+        {% for community in communities %}
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{{ community.image_url }}" class="card-img-top" alt="{{ community.name }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ community.name }}</h5>
+                    <p class="card-text">{{ community.description }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

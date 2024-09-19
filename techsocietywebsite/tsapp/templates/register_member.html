@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Register</h2>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        
+        <!-- Name Field -->
+        <div class="form-group">
+            {{ form.name.label_tag}}
+            {{ form.name }}
+        </div>
+        
+        <!-- Register Number and Email -->
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                {{ form.register_number.label_tag }}
+                {{ form.register_number }}
+            </div>
+            <div class="form-group col-md-6">
+                {{ form.email.label_tag }}
+                {{ form.email }}
+            </div>
+        </div>
+
+        <!-- Phone Number and Department -->
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                {{ form.phone.label_tag }}
+                {{ form.phone }}
+            </div>
+            <div class="form-group col-md-6">
+                {{ form.department.label_tag }}
+                {{ form.department }}
+            </div>
+        </div>
+
+        <!-- Year and Community -->
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                {{ form.year.label_tag }}
+                {{ form.year }}
+            </div>
+            <div class="form-group col-md-6">
+                {{ form.community.label_tag }}
+                {{ form.community }}
+            </div>
+        </div>
+
+        <!-- PR Team -->
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                {{ form.prteam.label_tag }}
+                {{ form.prteam }}
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock %}

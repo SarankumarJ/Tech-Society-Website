@@ -1,0 +1,153 @@
+/* General container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Navigation Styles */
+nav ul.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul.nav-list li {
+    margin-right: 20px;
+}
+
+nav ul.nav-list li:last-child {
+    margin-right: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* Footer Styles */
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+footer .footer-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+footer .footer-links li {
+    margin-right: 15px;
+}
+
+footer .footer-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Heading and text styles */
+h2 {
+    color: #5e3aa1;
+    font-size: 30px;
+    text-align: center;
+}
+
+.approval-text {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+
+/* Tablet responsiveness */
+@media (max-width: 1024px) {
+    nav ul.nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul.nav-list li {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .footer-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    footer .footer-links li {
+        margin-bottom: 10px;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer .footer-links {
+        flex-direction: column;
+    }
+
+    .btn-primary {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 22px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+}
