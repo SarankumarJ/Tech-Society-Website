@@ -5,6 +5,7 @@ from django.db import models
 class Community(models.Model):
     name = models.CharField(max_length=100,)
     discription = models.TextField(default='')
+    image = models.ImageField(upload_to='community_images/', default='')
 
     def __str__(self):
         return self.name

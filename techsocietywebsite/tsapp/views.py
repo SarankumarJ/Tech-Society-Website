@@ -5,7 +5,7 @@ from .forms import MemberRegistrationForm
 # Home view for listing communities
 def home(request):
     communities = Community.objects.all()  # Fetch all communities from the database
-    return render(request, '../templates\home.html', {'communities': communities})
+    return render(request, '../templates/home.html', {'communities': communities})
 
 # View for member registration
 def register_member(request):
