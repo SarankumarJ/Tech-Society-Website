@@ -24,7 +24,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="{% static 'images/logo.png' %}techsocietywebsite/static/images/WhatsApp Image 2024-08-29 at 10.00.50 PM.jpeg" width="50" height="50" style="border-radius">&nbsp;&nbsp;Tech Society</a>
+                <a class="navbar-brand" href="#"><img src="{% static 'images/logo.png' %}" width="50" height="50">&nbsp;&nbsp;Tech Society</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -58,25 +58,19 @@
     <!-- Footer -->
     <footer class="bg-dark text-light py-4 mt-5">
         <div class="container text-center">
-            <p class="mb-0">&copy; 2024 Tech Society. All Rights Reserved.</p>
-            <button class="navbar-toggler" type="button">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <ul class="nav justify-content-center mt-2">
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="{% url 'home' %}">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#about">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#contact">Contact</a>
-                </li>
-            </ul>
-            <div class="mt-3">
-                <a href="https://facebook.com" class="text-light mx-2"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com" class="text-light mx-2"><i class="fab fa-twitter"></i></a>
-                <a href="https://linkedin.com" class="text-light mx-2"><i class="fab fa-linkedin-in"></i></a>
+            <p class="mb-0">&copy; 2024 Tech Society. All Rights Reserved.</p><br><br>
+            
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="social-links1">
+                <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="social-links2">
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="social-links3">
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </footer>

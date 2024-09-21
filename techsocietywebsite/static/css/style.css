@@ -37,13 +37,14 @@ body {
 .left-content h1 {
     font-size: 3.5rem;
     margin-bottom: 20px;
-    color: #00ffff;
+    color: #f9c7f8;
+    text-shadow: 0 0 10px #865DFF;
 }
 
 .left-content p {
     font-size: 1.25rem;
     margin-bottom: 30px;
-    color: #ff00ff;
+    color: aliceblue;
 }
 
 .left-content .cta-btn {
@@ -125,13 +126,13 @@ body {
 }
 
 .mission-vision-section h5 {
-    color: #00ffff;
+    color: #f9c7f8;
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
 .mission-vision-section p {
-    color: #ff00ff;
+    color: aliceblue;
     font-size: 1.25rem;
     line-height: 1.5;
     padding: 10px;
@@ -145,7 +146,7 @@ body {
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid #8158e7;
 }
 
 .mission:hover, .vision:hover {
@@ -155,19 +156,20 @@ body {
 /* Communities Section */
 .communities-section {
     padding: 100px 0;
+    position: relative;
     color: #fff;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid #8158e7;
 }
 
 .card {
     background-color: #222;
     color: #fff;
-    border: 1px solid #00ffff;
+    border: 1px solid #e92efb;
     border-radius: 15px;
     transition: transform 0.3s ease;
     width: 80%;
@@ -225,13 +227,13 @@ body {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 2px solid #8158e7;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .contact-section h2 {
-    color: #00bfff;
+    color: #f9c7f8;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
@@ -248,7 +250,7 @@ body {
     padding: 20px;
     margin: 10px;
     flex: 1 1 30%;
-    box-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
+    /* box-shadow: 0 0 10px rgba(0, 191, 255, 0.5); */
     transition: transform 0.3s;
 }
 
@@ -270,8 +272,7 @@ body {
 .bubble {
     position: absolute;
     bottom: -100px;
-    background: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: linear-gradient(45deg,#440bd4,#ff2079);
     box-shadow: 0 4px 15px rgba(0, 255, 255, 0.2);
     border-radius: 50%;
     animation: rise 10s infinite ease-in-out;
@@ -333,12 +334,13 @@ body {
 
 /* Glassmorphism Effect */
 .glass-effect {
-    background: rgba(255, 255, 255, 0.1);
+    background: #ffffff1a;
     border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 2px solid #8158e7;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    
 }
 
 /* Responsive Design */
@@ -396,6 +398,35 @@ body {
     text-decoration: underline;
 }
 
+.social-links,.social-links1,.social-links2,.social-links3 {
+    margin-top: 10px;
+    display:contents;
+}
+
+.social-links a,.social-links1 a,.social-links2 a,.social-links3 a {
+    margin: 0 10px;
+    font-size: 1.5em;
+    color: #fff;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #1877f2;
+    text-shadow: 0 0 10px #1877f2, 0 0 20px #1877f2, 0 0 30px #1877f2;
+}
+.social-links1 a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
+}
+.social-links2 a:hover {
+    color: #c32aa3;
+    text-shadow: 0 0 10px #c32aa3, 0 0 20px #c32aa3, 0 0 30px #c32aa3;
+}
+.social-links3 a:hover {
+    color: #0a66c2;
+    text-shadow: 0 0 10px #0a66c2, 0 0 20px #0a66c2, 0 0 30px #0a66c2;
+}
+
 .navbar-nav .nav-link {
     color: #fff; /* Link color */
     transition: color 0.3s; /* Smooth color transition */
@@ -424,9 +455,10 @@ body {
 }
 
 .navbar-brand {
+    font-family: sans-serif;
     font-weight: bold; /* Make brand name bold */
     font-size: 1.8rem; /* Increase font size */
-    color: #00ffff; /* Accent color */
+    color:#f9c7f8; /* Accent color */
 }
 
 .navbar-nav .nav-link {
