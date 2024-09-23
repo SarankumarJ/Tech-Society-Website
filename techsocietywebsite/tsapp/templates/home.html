@@ -24,14 +24,15 @@
                 <p>Bringing Ideas to Life with Neon Innovation</p>
                 
                 <div class="cta">
-                    <button href=""><b><a href="{% url 'register_member' %}" >Join now</a></b></button>
+                    <button href="{% url 'register_member' %}"><b><a href="{% url 'register_member' %}" >Join now</a></b></button>
                 </div>
             </div>
-            <div class="home-video-container">
-                <video autoplay loop muted playsinline>
-                    <source src="techsocietywebsite/static/images/Untitled design.mp4" type="video/mp4">
+            <div class="home-img-container">
+                <!-- <video autoplay loop muted playsinline>
+                    <source src="{% static 'images/tsmp4.mp4' %}" type="video/mp4">
                     Your browser does not support the video tag.
-                </video>
+                </video> -->
+                <img src="{% static 'images/tslogo.png' %}" alt="Logo Image">
             </div>
         </div>
     </section><br><br>
@@ -45,7 +46,7 @@
                             <i class="fas fa-bullseye"></i>
                         </div>
                         <h5>Our <span>Mission</span></h5>
-                        <p>To provide a community where technology enthusiasts can share knowledge, work on projects, and build meaningful connections.</p>
+                        <p>Fueled by passion, we shape tech titans—transforming raw talent into masterful coders, game creators, and AI pioneers. Through collaboration and innovation, we push boundaries and solve real-world challenges with code. Join us and ignite the future, one breakthrough at a time.</p>
                     </div>
                 </div>
                 <div class="col-md-6 column vision" data-animation="fade-right">
@@ -54,7 +55,7 @@
                             <i class="fas fa-lightbulb"></i>
                         </div>
                         <h5>Our <span>Vision</span></h5>
-                        <p>To be the leading platform that fosters innovation, collaboration, and growth for the tech community.</p>
+                        <p>Our vision is to build a vibrant college tech community where diverse learners unite to explore, innovate, and advance technology. Through collaboration, mentorship, and cutting-edge research, we empower learners to become experts and drive positive impact with technology.</p>
                     </div>
                 </div>
             </div>
@@ -76,7 +77,7 @@
                             {% endif %}
                             <div class="card-body">
                                 <h5 class="card-title">{{ community.name }}</h5>
-                                <p class="card-text">{{ community.description }}</p>
+                                <p class="card-text">{{ community.discription }}</p>
                             </div>
                         </div>
                     </div>
@@ -94,7 +95,7 @@
         </div>
     </section><br><br>
 
-    <div class="contact-section">
+    <div class="contact-section" id="contact">
         <h2>Contact Us</h2>
         <div class="contact-details">
             <div class="contact-item">
@@ -102,12 +103,23 @@
                 <p>techsociety@saveetha.ac.in</p>
             </div>
             <div class="contact-item">
-                <h3>Phone</h3>
-                <p>+123-456-7890</p>
+                <h3>Location</h3>
+                <p>First Floor SEC</p>
             </div>
             <div class="contact-item">
                 <h3>Follow Us</h3>
-                <p>@TechSociety</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/techsocietysec?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <div class="social-links1">
+                        <a href="https://x.com/techsocietysec?t=m8rJJMGmcpzJQj89txc8Wg&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="social-links2">
+                        <a href="https://www.instagram.com/techsocietysec?igsh=OTFoM21lNzZ3NThj" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="social-links3">
+                        <a href="https://www.linkedin.com/company/techsociety-sec/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
             </div>
         </div>
     </div>

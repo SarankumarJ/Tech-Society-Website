@@ -9,18 +9,18 @@
             {% csrf_token %}
             
             <!-- Name Field -->
-            <div class="form-group animated-input">
+            <div class="form-group col-md-12 animated-input">
                 {{ form.name.label_tag }}
                 {{ form.name }}
             </div>
             
             <!-- Register Number and Email -->
             <div class="form-row">
-                <div class="form-group col-md-6 animated-input">
+                <div class="form-group col-md-12 animated-input">
                     {{ form.register_number.label_tag }}
                     {{ form.register_number }}
                 </div>
-                <div class="form-group col-md-6 animated-input">
+                <div class="form-group col-md-12 animated-input">
                     {{ form.email.label_tag }}
                     {{ form.email }}
                 </div>
@@ -28,11 +28,11 @@
 
             <!-- Phone Number and Department -->
             <div class="form-row">
-                <div class="form-group col-md-6 animated-input">
+                <div class="form-group col-md-12 animated-input">
                     {{ form.phone.label_tag }}
                     {{ form.phone }}
                 </div>
-                <div class="form-group col-md-6 animated-input">
+                <div class="form-group col-md-12 animated-input">
                     {{ form.department.label_tag }}
                     {{ form.department }}
                 </div>
@@ -40,11 +40,11 @@
 
             <!-- Year and Community -->
             <div class="form-row">
-                <div class="form-group col-md-6 animated-input">
+                <div class="form-group col-md-12 animated-input">
                     {{ form.year.label_tag }}
                     {{ form.year }}
                 </div>
-                <div class="form-group col-md-6 animated-input">
+                <div class="form-group col-md-12 animated-input">
                     {{ form.community.label_tag }}
                     {{ form.community }}
                 </div>
@@ -52,7 +52,7 @@
 
             <!-- PR Team -->
             <div class="form-row">
-                <div class="form-group col-md-6 animated-input">
+                <div class="form-group col-md-12 animated-input">
                     {{ form.prteam.label_tag }}
                     {{ form.prteam }}
                 </div>
@@ -63,4 +63,10 @@
         </form>
     </div>
 </div>
+{% if messages %}
+    {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+    {% endfor %}
+{% endif %}
+
 {% endblock %}
