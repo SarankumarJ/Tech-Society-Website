@@ -45,3 +45,12 @@ class MemberRegistrationForm(forms.ModelForm):
         if Member.objects.filter(register_number=register_number).exists():
             raise forms.ValidationError("This registration number is already in use.")
         return register_number
+
+    # Phone number validation
+    def clean_phone(self):
+        phone = self.cleaned_data.get('phone')
+        if len(phone) != 10:
+            raise forms.ValidationError("Enter a valid 10-digit phone number.")
+        if not phone.isdigit():
+            raise forms.ValidationError("Phone number should contain digits only.")
+        return phone

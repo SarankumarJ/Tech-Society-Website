@@ -1,7 +1,7 @@
 import csv
 from django.http import HttpResponse
 from django.contrib import admin
-from .models import Community, Department, Year, PRTeam, Member
+from .models import Community, Department, Year, PRTeam, Member, Roles, leaders
 
 def export_as_csv(modeladmin, request, queryset):
     """ Export data as CSV """
@@ -43,3 +43,6 @@ admin.site.register(Department, DepartmentAdmin)
 admin.site.register(Year, YearAdmin)
 admin.site.register(PRTeam, PRTeamAdmin)
 admin.site.register(Member, MemberAdmin)
+admin.site.register(Roles)
+admin.site.register(leaders)
+

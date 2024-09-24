@@ -40,3 +40,19 @@ class Member(models.Model):
 
     def __str__(self):
         return self.name
+    
+class Roles(models.Model):
+    name = models.CharField(max_length=100, default='')
+    order = models.PositiveIntegerField(default=0)
+
+    def __str__(self):
+        return self.name
+    
+class leaders(models.Model):
+    name = models.CharField(max_length=100,default='')
+    role = models.ForeignKey(Roles, on_delete=models.CASCADE,default='')
+    community = models.ForeignKey(Community, on_delete=models.CASCADE,default='')
+    image = models.ImageField(upload_to='leader_images/', default='')
+
+    def __str__(self):
+        return self.name

@@ -5,6 +5,11 @@
 <div class="container mt-5">
     <h2 class="text-center mb-4">Register</h2>
     <div class="form-wrapper">
+                {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
         <form method="POST" enctype="multipart/form-data" class="registration-form">
             {% csrf_token %}
             
@@ -63,10 +68,5 @@
         </form>
     </div>
 </div>
-{% if messages %}
-    {% for message in messages %}
-        <div class="alert alert-{{ message.tags }}">{{ message }}</div>
-    {% endfor %}
-{% endif %}
 
 {% endblock %}
